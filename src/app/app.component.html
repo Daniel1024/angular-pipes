@@ -12,6 +12,11 @@
       </thead>
       <tbody>
       <tr>
+        <td>{{ nombre2 }}</td>
+        <td>capitalizado:false</td>
+        <td>{{ nombre2 | capitalizado:false }}</td>
+      </tr>
+      <tr>
         <td>{{ nombre }}</td>
         <td>uppercase</td>
         <td>{{ nombre | uppercase }}</td>
@@ -110,6 +115,17 @@
         <td>{{ fecha }}</td>
         <td>date:'MMMM - dd':'':'fr'</td>
         <td>{{ fecha | date:'MMMM - dd':'':'fr' }}</td>
+      </tr>
+      <tr>
+        <td>{{ fecha }}</td>
+        <td>
+          date:'MMMM - dd':'':'{{ idioma }}'
+          <br>
+          <button class="mr-1 btn btn-primary" (click)="cambiarIdioma('es')">Español</button>
+          <button class="mr-1 btn btn-secondary" (click)="cambiarIdioma('en')">Ingles</button>
+          <button class="mr-1 btn btn-success" (click)="cambiarIdioma('fr')">Francés</button>
+        </td>
+        <td>{{ fecha | date:'MMMM - dd':'':idioma }}</td>
       </tr>
       </tbody>
     </table>
