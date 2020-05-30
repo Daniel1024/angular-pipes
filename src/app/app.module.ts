@@ -12,12 +12,16 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CapitalizadoPipe } from './pipes/capitalizado.pipe';
 import { DomseguroPipe } from './pipes/domseguro.pipe';
+import { ObfuscateCardNumberPipe } from './pipes/obfuscate-card-number.pipe';
+import { ObfuscationPipe } from './pipes/obfuscation.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     CapitalizadoPipe,
-    DomseguroPipe
+    DomseguroPipe,
+    ObfuscateCardNumberPipe,
+    ObfuscationPipe
   ],
   imports: [
     BrowserModule,

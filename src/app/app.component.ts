@@ -9,6 +9,8 @@ export class AppComponent {
   title = 'pipes';
   nombre: string = 'Capitán América';
   nombre2: string = 'dAnIel lÓpeZ';
+  numberCard = '  dfgdfgfg  '; //'1234 5678 9012 3456';
+  obfuscation = {key: 'email', value: 'd.lopez.1740@gmail.com'}
   arreglo = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
   PI: number = Math.PI;
   porcentaje: number = 0.234;
